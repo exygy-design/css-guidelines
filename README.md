@@ -61,6 +61,22 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Many tim
 * Avoid using comma delimited selectors.
 * Avoid nesting within a media query.
 
+## Architecture
+
+{% highlight bash %}
+stylesheets
+├── github
+│   ├── base.scss
+│   ├── layout.scss
+│   └── buttons.scss
+├── github2
+│   ├── about.scss
+│   └── blog.scss
+└── mobile
+    ├── base.scss
+    └── files.scss
+{% endhighlight %}
+
 ## References
 * https://github.com/thoughtbot/guides
 * http://primercss.io/guidelines/
