@@ -63,7 +63,7 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Many tim
 
 ## Architecture
 
-{% highlight bash %}
+```
 stylesheets
 ├── github
 │   ├── base.scss
@@ -75,7 +75,7 @@ stylesheets
 └── mobile
     ├── base.scss
     └── files.scss
-{% endhighlight %}
+```
 
 ## References
 * https://github.com/thoughtbot/guides
