@@ -1,6 +1,19 @@
 # css-guidelines
 Best practices and guidelines for writing HTML and CSS
 
+##  Lean markup
+Whenever possible, avoid superfluous parent elements when writing HTML. Many times this requires iteration and refactoring, but produces less HTML. For example:
+
+```html
+<!-- Not so great -->
+<span class="avatar">
+  <img src="...">
+</span>
+
+<!-- Better -->
+<img class="avatar" src="...">
+```
+
 ## Spacing
 * Use soft-tabs with a two space indent. Spaces are the only way to guarantee code renders the same in any person’s environment.
 * Use one space between property and value: width: 20px not width:20px.
