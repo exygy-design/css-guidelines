@@ -62,6 +62,7 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Many tim
 * Avoid nesting within a media query.
 
 ## Architecture
+Split the scss codebase into meaningful separated folders so it is easy to find stuff later when you have to come back to the code.
 
 ```
 sass/
@@ -92,11 +93,6 @@ sass/
 |   |– _contact.scss     # Contact specific styles
 |   …                    # Etc.
 |
-|– themes/
-|   |– _theme.scss       # Default theme
-|   |– _admin.scss       # Admin theme
-|   …                    # Etc.
-|
 |– utils/
 |   |– _variables.scss   # Sass Variables
 |   |– _functions.scss   # Sass Functions
@@ -115,5 +111,5 @@ sass/
 ## References
 * https://github.com/thoughtbot/guides
 * http://primercss.io/guidelines/
-
+* http://sass-guidelin.es/#architecture
 
