@@ -1,7 +1,9 @@
-# css-guidelines
+# HTML and CSS Guidelines
 Best practices and guidelines for writing HTML and CSS
 
-##  Lean markup
+## HTML
+
+### Lean markup
 Whenever possible, avoid superfluous parent elements when writing HTML. Many times this requires iteration and refactoring, but produces less HTML. For example:
 
 ```html
@@ -14,7 +16,9 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Many tim
 <img class="avatar" src="...">
 ```
 
-## Spacing
+## CSS
+
+### Spacing
 * Use soft-tabs with a two space indent. Spaces are the only way to guarantee code renders the same in any person’s environment.
 * Use one space between property and value: width: 20px not width:20px.
 * Put spaces before { in rule declarations.
@@ -23,7 +27,7 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Many tim
 * Place closing braces of declaration blocks on a new line.
 * Each declaration should appear on its own line for more accurate error reporting.
 
-## Formatting
+### Formatting
 * Use the SCSS syntax.
 * Use hyphens when naming mixins, extends, classes, functions & variables: span-columns not spanColumns.
 * Prefer hex color codes #fff or #FFF.
@@ -36,7 +40,7 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Many tim
 * Use a leading zero in decimal numbers: 0.5 not .5
 * Use double colons for pseudo-elements.
 
-## Order
+### Order
 * Use alphabetical order for declarations.
 * Place @extends and @includes at the top of your declaration list.
 * Place media queries directly after the declaration list.
@@ -45,7 +49,7 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Many tim
 * Place nested elements fourth.
 * Place nested classes fifth.
 
-## Selectors
+### Selectors
 * Don't use ID's for style.
 * Use meaningful names: $visual-grid-color not $color or $vslgrd-clr.
 * Use ID and class names that are as short as possible but as long as necessary.
