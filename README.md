@@ -61,6 +61,44 @@ Whenever possible, avoid superfluous parent elements when writing HTML. Many tim
 * Avoid using comma delimited selectors.
 * Avoid nesting within a media query.
 
+```scss
+@import "partial-name";
+
+.class-one {
+  background-color: $color-variable;
+  border: 0;
+
+  @media (min-width: $screen-variable) {
+    margin: ($spacing-variable * 2) 1rem;
+  }
+
+  &:hover {
+    box-shadow: 0 0 2px 1px rgba($color-variable, 0.2);
+  }
+
+  &::before {
+    content: "hello";
+  }
+}
+
+.class-two {
+  @extend %placeholder;
+  @include mixin;
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+
+  a {
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+```
+
 ## Architecture
 Split the scss codebase into meaningful separated folders so it is easy to find stuff later when you have to come back to the code.
 
