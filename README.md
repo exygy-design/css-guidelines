@@ -138,9 +138,6 @@ The main file should be the only Sass file from the whole code base not to begin
 
 @import 'pages/home';
 @import 'pages/contact';
-
-@import 'themes/theme';
-@import 'themes/admin';
 ```
 
 ## References
