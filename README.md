@@ -43,3 +43,9 @@ Best practices and guidelines for writing HTML and CSS
 * Avoid using HTML tags on classes for generic markup <div>, <span>: .widgets not div.widgets.
 * Avoid using comma delimited selectors.
 * Avoid nesting within a media query.
+
+## References
+* https://github.com/thoughtbot/guides
+* http://primercss.io/guidelines/
+
+
